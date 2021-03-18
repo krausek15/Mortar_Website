@@ -1,0 +1,601 @@
+@media (max-width: 700px) {
+  body {
+    height: min-content;
+    padding: 0px;
+  }
+  header {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header img {
+    width: 100%;
+  }
+  nav {
+    background-color: none;
+    padding: 0px 0px 10px 0px;
+  }
+  ul {
+    border: none;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+  li a:hover:not(.active) {
+    color: #c57851;
+  }
+
+  .active {
+    color: #c57851;
+  }
+  li {
+    width: 25%;
+    margin-bottom: 5px;
+    padding: 0px;
+    border-right: solid 3px #2c462c;
+  }
+  li:first-child {
+    border-left: solid 3px #2c462c;
+  }
+  a {
+    text-decoration: none;
+    color: #2c462c;
+    text-transform: uppercase;
+    font-size: 5vw;
+    font-weight: bolder;
+    font-family: baskerville bold, "Times New Roman", Times, serif;
+  }
+
+  main {
+    background-color: none;
+  }
+  h2.events-highlights {
+    color: #c57851;
+    font-size: 3em;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  main h2 {
+    color: #c57851;
+    font-size: 34px;
+    line-height: 15px;
+  }
+  p {
+    line-height: 5px;
+  }
+  main p,
+  address {
+    color: #c57851;
+    font-size: 26px;
+  }
+  main hr {
+    border: solid 3px #2c462c;
+  }
+  h3 {
+    color: #c57851;
+    font-size: 34px;
+    line-height: 15px;
+  }
+  .top {
+    background-color: none;
+    position: relative;
+  }
+
+  .top a {
+    position: absolute;
+    top: 10%;
+    left: 0;
+  }
+
+  .bottom {
+    position: relative;
+  }
+  .bottom a {
+    position: absolute;
+    top: 0%;
+    left: 0;
+  }
+  .bottom-band {
+    position: relative;
+  }
+  .bottom-band a {
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+  }
+  .top-band {
+    position: relative;
+  }
+  .top-band a {
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+  }
+  .aboutus {
+    height: 20%;
+  }
+  .about-area {
+    display: block;
+  }
+  .info {
+    position: relative;
+    top: -250px;
+    left: 0;
+    background: #2c462c;
+    padding: 10px;
+
+    width: 60%;
+  }
+  .info h2 {
+    font-family: Baskerville, "Palatino Linotype", Palatino,
+      "Century Schoolbook L", "Times New Roman", "serif";
+    color: white;
+    text-align: left;
+  }
+  .info p {
+    font-family: Baskerville, "Palatino Linotype", Palatino,
+      "Century Schoolbook L", "Times New Roman", "serif";
+    font-size: 1rem;
+    color: white;
+    line-height: 1.2em;
+  }
+
+  .aboutimg {
+    position: relative;
+    left: 40%;
+    width: 60%;
+  }
+  .highlight {
+    background: #2c462c;
+    padding: 20px;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .highlight:hover {
+    background: #c57851;
+  }
+
+  #cookie {
+    width: 100%;
+  }
+  .day-of-week {
+    background: #2c462c;
+    text-align: center;
+    color: White;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: 2px solid #2c462c;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-family: baskerville bold, "Times New Roman", Times, serif;
+  }
+  .day-of-week,
+  .date-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .date-grid button:first-child {
+    grid-column: 2;
+  }
+  .date-grid button:hover {
+    background-color: #2c462c;
+  }
+  button.active-date {
+    background-color: #2c462c;
+  }
+  .date-grid button {
+    transition: background-color 300ms ease;
+    background-color: white;
+    border: 2px solid #2c462c;
+    margin: 5px;
+    border-radius: 5px;
+    height: 50px;
+  }
+  .calander {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .checkout {
+    display: flex;
+    justify-content: center;
+    background: #2c462c;
+    border-bottom: 5px solid white;
+    padding: 20px;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  .menu-nav {
+    padding: 0px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .menu-btn {
+    width: 100%;
+    border-right: solid 3px #2c462c;
+    color: #2c462c;
+    display: inline;
+    text-transform: uppercase;
+    font-size: 3vm;
+    font-weight: bolder;
+    font-family: baskerville bold, "Times New Roman", Times, serif;
+    padding: 0 5px;
+  }
+  .menu-btn:first-child {
+    border-left: solid 3px #2c462c;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .item-box {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .item-box img:hover {
+    opacity: 0.5;
+  }
+  .item-box h3 {
+    margin: 0px;
+    font-size: 3vm;
+    background: #2c462c;
+    width: 90%;
+    display: inline-block;
+    padding: 10px 2px 10px 2px;
+
+    color: white;
+  }
+  .grid-item {
+    width: 90%;
+    border: 2px solid #2c462c;
+  }
+  .custom-order-btn {
+    background: #c57851;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+  }
+}
+@media (min-width: 701px) {
+  body {
+    height: min-content;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  header {
+    background-color: white;
+    width: 35%;
+    display: inline;
+  }
+  header img {
+    width: 100%;
+  }
+  nav {
+    display: flex;
+    width: 65%;
+    background-color: none;
+    padding: 0px 0px 10px 0px;
+    align-items: center;
+  }
+  ul {
+    border: none;
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+  }
+  li a:hover:not(.active) {
+    color: #c57851;
+  }
+
+  .active {
+    color: #c57851;
+  }
+  li {
+    width: 25%;
+    margin-bottom: 5px;
+    padding: 0px;
+    border-right: solid 3px #2c462c;
+  }
+  li:first-child {
+    border-left: solid 3px #2c462c;
+  }
+  a {
+    text-decoration: none;
+    color: #2c462c;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: bolder;
+    font-family: baskerville bold, "Times New Roman", Times, serif;
+  }
+
+  main {
+    width: 35%;
+    display: inline;
+    order: 0;
+    background-color: none;
+  }
+  h2.events-highlights {
+    color: #c57851;
+    font-size: 3em;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  main h2 {
+    color: #c57851;
+    font-size: 34px;
+    line-height: 15px;
+  }
+  p {
+    line-height: 5px;
+  }
+  main p,
+  address {
+    color: #c57851;
+    font-size: 1.25em;
+  }
+  main hr {
+    border: solid 3px #2c462c;
+  }
+  h3 {
+    color: #c57851;
+    font-size: 34px;
+    line-height: 15px;
+  }
+  .top {
+    display: inline;
+    order: 0;
+    width: 60%;
+    padding-left: 5%;
+    background-color: none;
+    position: relative;
+  }
+  .about-area {
+    display: inline;
+    order: 1;
+    width: 60%;
+    padding-left: 5%;
+    background-color: none;
+    position: relative;
+  }
+
+  .top a {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+  }
+
+  .bottom {
+    width: 100%;
+    position: relative;
+  }
+  .bottom a {
+    position: absolute;
+    top: 20%;
+    left: 0;
+  }
+  .bottom-band {
+    display: inline-block;
+    position: relative;
+    top: -300px;
+    width: 60%;
+  }
+  .bottom-band a {
+    position: absolute;
+    bottom: 20%;
+    right: 0;
+  }
+  .top-band {
+    display: inline-block;
+    order: 0;
+    width: 60%;
+  }
+  .top-band a {
+    z-index: 1;
+    position: absolute;
+    bottom: 70%;
+    right: 30%;
+  }
+  article {
+    width: 100%;
+  }
+  .aboutus {
+    height: 370px;
+  }
+  .info {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background: #2c462c;
+    padding: 10px;
+
+    width: 50%;
+  }
+  .info h2 {
+    font-family: Baskerville, "Palatino Linotype", Palatino,
+      "Century Schoolbook L", "Times New Roman", "serif";
+    color: white;
+    text-align: left;
+  }
+  .info p {
+    font-family: Baskerville, "Palatino Linotype", Palatino,
+      "Century Schoolbook L", "Times New Roman", "serif";
+    font-size: 1rem;
+    color: white;
+    line-height: 1.2em;
+  }
+
+  .aboutimg {
+    position: relative;
+    left: 40%;
+    width: 60%;
+  }
+  .highlight {
+    background: #2c462c;
+    padding: 20px;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .highlight:hover {
+    background: #c57851;
+  }
+
+  #cookie {
+    width: 100%;
+  }
+  .events {
+    position: relative;
+    right: 35px;
+  }
+
+  .day-of-week {
+    background: #2c462c;
+    text-align: center;
+    color: White;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border: 2px solid #2c462c;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-family: baskerville bold, "Times New Roman", Times, serif;
+  }
+  .day-of-week,
+  .date-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .date-grid button:first-child {
+    grid-column: 2;
+  }
+  .date-grid button:hover {
+    background-color: #2c462c;
+  }
+  button.active-date {
+    background-color: #2c462c;
+  }
+  .date-grid button {
+    transition: background-color 300ms ease;
+    background-color: white;
+    border: 2px solid #2c462c;
+    margin: 5px;
+    border-radius: 5px;
+    height: 50px;
+  }
+  .calander {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .checkout {
+    grid-row: 1;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    background: #2c462c;
+    border-bottom: 5px solid white;
+    padding: 20px;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  #menu-box {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+  }
+  .menu-nav {
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    grid-row: 1 / span 1;
+  }
+  .menu-btn {
+    width: 100%;
+    border-right: solid 3px #2c462c;
+    color: #2c462c;
+    display: inline;
+    text-transform: uppercase;
+    font-size: 3vm;
+    font-weight: bolder;
+    font-family: baskerville bold, "Times New Roman", Times, serif;
+    padding: 0 5px;
+  }
+  .menu-btn:first-child {
+    border-left: solid 3px #2c462c;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row: 2 / span 2;
+    grid-column: 1 / span 1;
+  }
+  .item-box {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .item-box img:hover {
+    opacity: 0.5;
+  }
+  .item-box h3 {
+    margin: 0px;
+    font-size: 3vm;
+    background: #2c462c;
+    width: 90%;
+    display: inline-block;
+    padding: 10px 2px 10px 2px;
+
+    color: white;
+  }
+  .grid-item {
+    width: 90%;
+    border: 2px solid #2c462c;
+  }
+  .date-grid {
+    width: 100%;
+  }
+  .custom-order-btn {
+    grid-row: 3;
+    grid-column: 2;
+    background: #c57851;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+  }
+}
